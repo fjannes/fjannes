@@ -46,7 +46,18 @@ Pilih Warna Background :
 	<H1>Javascript Button</H1> 
 		<FORM>        
 			<INPUT TYPE="BUTTON"  VALUE="Jangan di Klik" onClick="alert('Jangan Klik saya!!!'); return value"> 
-		</FORM> 
+		</FORM>
+	
+	<table style="width:300px;height:100px">
+	  <tbody><tr>
+	    <td onmouseover="bgChange(this.style.backgroundColor)" onmouseout="bgChange('#808080')" style="background-color:Khaki">
+	    </td>
+	    <td onmouseover="bgChange(this.style.backgroundColor)" onmouseout="bgChange('#808080')" style="background-color:PaleGreen">
+	    </td>
+	    <td onmouseover="bgChange(this.style.backgroundColor)" onmouseout="bgChange('#808080')" style="background-color:Silver">
+	    </td>
+	  </tr>
+	</tbody></table>
 </center>
 </body>
 </html>
