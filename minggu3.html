@@ -43,22 +43,29 @@ function waktu() {
 		<li><a href="minggu3.html" title="Klik Untuk Melihat Tugas Minggu 3">Minggu 3</a></li>
 	</ul>
 	&nbsp;<br><br><br>
-	 <SCRIPT> 
-		function warna(pilihan) {
-			alert("Anda klik buton warna " + pilihan + "")
-			document.bgColor=pilihan
-		} 
-	</SCRIPT> 
-	<h1>Pilih warna favorit anda.</h1> 
-	<FORM> 
-		<INPUT TYPE="button" VALUE="Biru" onClick="warna('blue')" style="background: #0000ff;"> 
-		<INPUT TYPE="button" VALUE="Pink" onClick="warna('pink')" style="background: pink;"> 
-		<INPUT TYPE="button" VALUE="Coklat" onClick="warna('brown')" style="background: brown;"> 
-		<INPUT TYPE="button" VALUE="Kelabu" onClick="warna('grey')" style="background: #808080;"> 
-		<INPUT TYPE="button" VALUE="Oranye" onClick="warna('orange')" style="background: orange;"> 
-		<INPUT TYPE="button" VALUE="Putih" onClick="warna('white')" style="background: white;">                   
-	</FORM>  
-	</SCRIPT>
+	 <center>
+<script type="text/javascript">
+function bgChange(bg)
+{
+document.body.style.background=bg;
+}
+</script>
+Pilih Warna Background :
+<table border="1" width="300px" height="50px">
+<tr> 
+<td onclick="bgChange('#000000')" bgcolor="#000000">
+</td>
+<td onclick="bgChange('#c12828')" bgcolor="#c12828">
+</td>
+<td onclick="bgChange('#65c128')" bgcolor="#65c128">
+</td>
+<td onclick="bgChange('#28b7c1')" bgcolor="#28b7c1">
+</td>
+<td onclick="bgChange('#2a30d6')" bgcolor="#2a30d6">
+</td>
+</tr></table>
+<div class='clear'></div>
+</center>
 	<SCRIPT>
 	function dontClick(){
 		alert("I told you not to click !");
